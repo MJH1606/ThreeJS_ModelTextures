@@ -34,7 +34,7 @@ function loadModel() {
   const loader = new OBJLoader();
   //loader.setDRACOLoader(dracoLoader);
   
-  loader.load('/models/BP_T90A.obj', function (obj) {
+  loader.load('/models/BP_M2A3_Desert.obj', function (obj) {
     obj.scale.setScalar(0.005)
     obj.traverse(function (node){
       //console.log(node)
