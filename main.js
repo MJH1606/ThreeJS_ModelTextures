@@ -30,11 +30,9 @@ function loadModel() {
   dracoLoader.setDecoderPath('https://www.gstatic.com/draco/v1/decoders/');
   dracoLoader.preload();
 
-  //const loader = new GLTFLoader();
   const loader = new OBJLoader();
-  //loader.setDRACOLoader(dracoLoader);
   
-  loader.load('/models/BP_M2A3_Desert.obj', function (obj) {
+  loader.load('/models/BP_BFV.obj', function (obj) {
     obj.scale.setScalar(0.005)
     obj.traverse(function (node){
       //console.log(node)
